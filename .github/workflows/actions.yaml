@@ -17,8 +17,8 @@ jobs: # Секция jobs определяет этапы процесса
  test:
         runs-on: ubuntu-latest
         steps:
-        - name: Checkout # Шаг для получения доступа к репозиторию
-                uses: actions/checkout@v4 # Данный шаг использует готовый workflow actions/checkout@v4: он клонирует текущий коммит репозитория. Таким образом, раннеру становится доступен исходный код проекта
+      - name: Checkout # Шаг для получения доступа к репозиторию
+          uses: actions/checkout@v4 # Данный шаг использует готовый workflow actions/checkout@v4: он клонирует текущий коммит репозитория. Таким образом, раннеру становится доступен исходный код проекта
       - name: Set up Node # Шаг для указания используемой версии Node.js
         uses: actions/setup-node@v4
         with:
